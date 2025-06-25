@@ -1,5 +1,4 @@
 import type { Component } from 'mithril';
-import m from 'mithril';
 
 const defineComponent = (com: Component) => com;
 

@@ -13,7 +13,8 @@ const config = defineConfig({
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
     alias: {
-      '@': resolve(__dirname, 'src')
+      '@': resolve(__dirname, 'src'),
+      'mithril/jsx-dev-runtime': 'mithril/jsx-runtime'
     }
   },
   module: {
@@ -34,7 +35,7 @@ const config = defineConfig({
                   pragma: 'm',
                   pragmaFrag: 'm.fragment',
                   runtime: 'classic',
-                  importSource: 'mithril' // 添加这行
+                  importSource: '@/jsx-runtime' // 添加这行
                 }
               }
             }

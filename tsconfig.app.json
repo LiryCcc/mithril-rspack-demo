@@ -13,9 +13,8 @@
     "moduleDetection": "force",
     "noEmit": true,
     // JSX 配置 - 重要！
-    "jsx": "react",
-    "jsxFactory": "m",
-    "jsxFragmentFactory": "m.fragment",
+    "jsx": "react-jsx",
+    "jsxImportSource": "@/jsx-runtime",
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
